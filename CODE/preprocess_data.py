@@ -1,8 +1,8 @@
 import numpy as np
 import pandas as pd
 
-def get_kinematics(x, z):
-	dx = x - x.shift()
+def get_kinematics(q, z):
+	dx = q - q.shift()
 	dy = z - z.shift()
 	d2x = dx - dx.shift()
 	d2y = dy - dy.shift()
